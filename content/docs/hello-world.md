@@ -1,25 +1,25 @@
 ---
 id: hello-world
-title: Hello World
+title: ہیلو دنیا
 permalink: docs/hello-world.html
 prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-The smallest React example looks like this:
+کی سب سے سادہ مثال کچھ ایسی ہو گی React
 
 ```js
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <h1>ہیلو، دنیا!</h1>,
   document.getElementById('root')
 );
 ```
 
-It displays a heading saying "Hello, world!" on the page.
+یہ مثال "ہیلو، دنیا!" شائع کرتی ہے۔
 
-[](codepen://hello-world)
+[کوڈ پین پر دیکھیں](codepen://hello-world)
 
-Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
+مندرجہ بالا لنک کی مدد سےآن لائن مدیر کھولئے۔ اس میں من پسند تبدیلی کیجئے اور آوٹ پٹ پر اثرانداز ہونے والے عناصر پر غور کیجئے۔ اس معلوماتی کتابچے میں زیادہ تر مثالیں ایسی ہی ہوں گی۔
 
 
 ## How to Read This Guide {#how-to-read-this-guide}

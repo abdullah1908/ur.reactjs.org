@@ -80,6 +80,18 @@ const MarkdownPage = ({
       <div css={{flex: '1 0 auto'}}>
         <Container>
           <div css={sharedStyles.articleLayout.container}>
+            <div css={sharedStyles.articleLayout.sidebar}>
+              <StickyResponsiveSidebar
+                enableScrollSync={enableScrollSync}
+                createLink={createLink}
+                defaultActiveSection={findSectionForPath(
+                  location.pathname,
+                  sectionList,
+                )}
+                location={location}
+                sectionList={sectionList}
+              />
+            </div>
             <Flex type="article" direction="column" grow="1" halign="stretch">
               <MarkdownHeader title={titlePrefix} />
 
@@ -121,19 +133,6 @@ const MarkdownPage = ({
                 )}
               </div>
             </Flex>
-
-            <div css={sharedStyles.articleLayout.sidebar}>
-              <StickyResponsiveSidebar
-                enableScrollSync={enableScrollSync}
-                createLink={createLink}
-                defaultActiveSection={findSectionForPath(
-                  location.pathname,
-                  sectionList,
-                )}
-                location={location}
-                sectionList={sectionList}
-              />
-            </div>
           </div>
         </Container>
       </div>

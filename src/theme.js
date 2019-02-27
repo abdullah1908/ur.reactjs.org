@@ -10,6 +10,7 @@
  */
 
 import hex2rgba from 'hex2rgba';
+import {right} from 'glamor';
 
 const colors = {
   lighter: '#373940', // light blue
@@ -139,19 +140,20 @@ const sharedStyles = {
     sidebar: {
       display: 'flex',
       flexDirection: 'column',
+      textAlign: 'right',
 
       [media.between('small', 'sidebarFixed')]: {
-        borderLeft: '1px solid #ececec',
-        marginLeft: 80,
+        borderRight: '1px solid #ececec',
+        marginRight: 80,
       },
 
       [media.between('small', 'largerSidebar')]: {
         flex: '0 0 200px',
-        marginLeft: 80,
+        marginRight: 80,
       },
 
       [media.between('small', 'medium')]: {
-        marginLeft: 40,
+        marginRight: 40,
       },
 
       [media.greaterThan('largerSidebar')]: {
@@ -160,7 +162,7 @@ const sharedStyles = {
 
       [media.greaterThan('sidebarFixed')]: {
         position: 'fixed',
-        right: 0,
+        left: 0,
         width: 300,
         zIndex: 2,
       },
